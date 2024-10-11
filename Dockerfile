@@ -9,5 +9,5 @@ FROM alpine:3.20
 WORKDIR /app
 COPY --from=builder /app/glance .
 
-EXPOSE 8080/tcp
+EXPOSE 8070/tcp
 ENTRYPOINT ["/app/glance"]
